@@ -34,3 +34,21 @@ greeting = function (name: string) {
 	return `Hi ${name}`;
 };
 console.log(greeting("joonhan")); // Hi joonhan
+
+// Section2: Type inference
+document.addEventListener('click', function(event) {
+	console.log(event.button)
+})
+
+// Section2: Array type
+let skills: string[];
+skills = ['Problem Solving', 'Collaborative'];
+skills.forEach(skill => {
+	console.log(skill.length);
+});
+
+let scores: (string | number)[];
+scores = ['Programming', 5, 'Collaborative', 4];
+scores.forEach(element => {
+	console.log(element);
+})

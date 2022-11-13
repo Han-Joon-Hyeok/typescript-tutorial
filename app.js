@@ -20,4 +20,19 @@ var greeting;
 greeting = function (name) {
     return "Hi ".concat(name);
 };
-console.log(greeting("joonhan"));
+console.log(greeting("joonhan")); // Hi joonhan
+// Section2: Type inference
+document.addEventListener('click', function (event) {
+    console.log(event.button);
+});
+// Section2: Array type
+var skills;
+skills = ['Problem Solving', 'Collaborative'];
+skills.forEach(function (skill) {
+    console.log(skill.length);
+});
+var scores;
+scores = ['Programming', 5, 'Collaborative', 4];
+scores.forEach(function (element) {
+    console.log(element);
+});
