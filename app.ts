@@ -26,3 +26,11 @@ const showProduct = (name: string, price: number) => {
 
 const product = getProduct(1);
 showProduct(product.name, product.price); // The product Product 1 costs 42
+
+// Section2: Type annotation
+
+let greeting : (name: string) => string;
+greeting = function (name: string) {
+	return `Hi ${name}`;
+};
+console.log(greeting("joonhan")); // Hi joonhan

@@ -1,3 +1,4 @@
+// Section1. TypeScript Hello World
 var message = "Hello, TypeScript!";
 var heading = document.createElement('h1');
 heading.textContent = message;
@@ -13,4 +14,10 @@ var showProduct = function (name, price) {
     console.log("The product ".concat(name, " costs ").concat(price));
 };
 var product = getProduct(1);
-showProduct(product.name, product.price);
+showProduct(product.name, product.price); // The product Product 1 costs 42
+// Section2: Type annotation
+var greeting;
+greeting = function (name) {
+    return "Hi ".concat(name);
+};
+console.log(greeting("joonhan"));
