@@ -32,7 +32,14 @@ skills.forEach(function (skill) {
     console.log(skill.length);
 });
 var scores;
-scores = ['Programming', 5, 'Collaborative', 4];
+scores = ['Programming', 'Collaborative', 4];
 scores.forEach(function (element) {
     console.log(element);
 });
+// Section2: Tuple type
+// ? operator means it's optional argument.
+var bgColor, headerColor;
+bgColor = [0, 255, 255, 0.5];
+headerColor = [0, 255, 255];
+var allIsOptional;
+allIsOptional = [];
